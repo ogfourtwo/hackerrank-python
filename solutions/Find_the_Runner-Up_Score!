@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    arr.sort()
+    max=arr[n-1]
+    i=n-2
+    while(i>=0):
+        if(arr[i]!=max):
+            print(arr[i])
+            break
+        i-=1
